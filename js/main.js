@@ -9,7 +9,7 @@ if ('serviceWorker' in navigator) {
 $(".data-options-global").css("display", "none");
 
 $(document).ready(function() {
-    
+
     if (pdbufftotal.val() == 0 && pdtotal.val() == 0) {
         mchtotal.css("color", "red");
         mcatotal.css("color", "red");
@@ -46,7 +46,7 @@ function arrowUp (arrow) {
 
 function arrowDown (arrow) {
     let _self = $(arrow);
-    let numberCounter = _self.closest(".inner-block").find("input");
+    let numberCounter = _self.closest(".inner-block, .inner-block-table").find("input");
     let number = numberCounter.val();
     number--;  
     if (numberCounter.val() > number || numberCounter.val() == "" || numberCounter.val() == undefined) {
@@ -60,7 +60,7 @@ $("#pl-arrow-up, #pe-arrow-up, #atq-arrow-up, #def-arrow-up, #pd-arrow-up, #pd-b
 });
 
 // Arrow down callback
-$("#atq-arrow-down, #def-arrow-down, #pd-arrow-down, #pd-buff-arrow-down, #mca-arrow-down, #mca-arrow-down, #ma-arrow-down, #mm-arrow-down").click(function() {
+$("#atq-arrow-down, #def-arrow-down, #pd-arrow-down, #pd-buff-arrow-down, #mch-arrow-down, #mca-arrow-down, #ma-arrow-down, #mm-arrow-down").click(function() {
     arrowDown($(this));
 });
 
