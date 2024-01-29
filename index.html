@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Character Sheet for the Prymarya system">
+    <meta name="author" content="Daniel Araujo">
+    <title>Character Sheet for Prymarya System</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/96x96.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div class="container inner-body">
+        <div class="row">
+            <div class="inner-block-header">
+                <div class="col-12 text-center"><img src="img/96x96.png" alt="Dice image"></div>
+                <div class="col-12 text-center">Character Sheet for the Prymarya system</div>
+                <div class="col-12 text-center char-name">
+                    <label for="Character" class="inner-block-label">Aventureiro:</label>
+                    <p id="char-name"></p>
+                </div>
+            </div>
+            <div class="col-12 inner-block-content">
+                <div class="inner-block">
+                    <label for="PLs" class="inner-block-label">Vida</label>
+                    <img src="img/arrow_up.png" class="inner-block-arrows" id="pl-arrow-up" alt="Up arrow">
+                    <input type="number" class="inner-block-text" placeholder="" id="pl-total" max="50" pattern="/^-?\d+\.?\d*$/" onKeyPress="if( this.value.length == 3 ) return false; " />
+                    <img src="img/arrow_down.png" class="inner-block-arrows" id="pl-arrow-down" alt="Down arrow">
+                </div>
+                <div class="inner-block">
+                    <label for="PEs" class="inner-block-label">Energia</label>
+                    <img src="img/arrow_up.png" class="inner-block-arrows" id="pe-arrow-up" alt="Up arrow">
+                    <input type="number" class="inner-block-text" placeholder="" id="pe-total" max="50" pattern="/^-?\d+\.?\d*$/" onKeyPress="if( this.value.length == 3 ) return false; " />
+                    <img src="img/arrow_down.png" class="inner-block-arrows" id="pe-arrow-down" alt="Down arrow">
+                </div>
+            </div>
+            <div class=" col-12 inner-block">
+                <label for="PDs" class="inner-block-label">Deterioração</label>
+                <img src="img/arrow_up.png" class="inner-block-arrows" id="pd-arrow-up" alt="Up arrow">
+                <input type="number" class="inner-block-text" placeholder="" id="pd-total" max="50" pattern="/^-?\d+\.?\d*$/" onKeyPress="if( this.value.length == 3 ) return false; " />
+                <img src="img/arrow_down.png" class="inner-block-arrows" id="pd-arrow-down" alt="Down arrow">
+            </div>
+            <div class=" col-12 inner-block">
+                <label for="PDs" class="inner-block-label">Deterioração Extra:</label>
+                <img src="img/arrow_up.png" class="inner-block-arrows" id="pd-buff-arrow-up" alt="Up arrow">
+                <input type="number" class="inner-block-text" placeholder="" id="pd-buff-total" max="50" pattern="/^-?\d+\.?\d*$/" onKeyPress="if( this.value.length == 3 ) return false; " />
+                <img src="img/arrow_down.png" class="inner-block-arrows" id="pd-buff-arrow-down" alt="Down arrow">
+            </div>
+            <div class="col-12 inner-block-content">
+                <div class="inner-block">
+                    <label for="PDs" class="inner-block-label">ATQ:</label>
+                    <img src="img/arrow_up.png" class="inner-block-arrows" id="atq-arrow-up" alt="Up arrow">
+                    <input type="number" class="inner-block-text" placeholder="" id="atq-total" max="50" pattern="/^-?\d+\.?\d*$/" onKeyPress="if( this.value.length == 3 ) return false; " />
+                    <img src="img/arrow_down.png" class="inner-block-arrows" id="atq-arrow-down" alt="Down arrow">
+                </div>
+                <div class="inner-block">
+                    <label for="PDs" class="inner-block-label">DEF:</label>
+                    <img src="img/arrow_up.png" class="inner-block-arrows" id="def-arrow-up" alt="Up arrow">
+                    <input type="number" class="inner-block-text" placeholder="" id="def-total" max="50" pattern="/^-?\d+\.?\d*$/" onKeyPress="if( this.value.length == 3 ) return false; " />
+                    <img src="img/arrow_down.png" class="inner-block-arrows" id="def-arrow-down" alt="Down arrow">
+                </div>
+            </div>
+            <div class="col-12 inner-block-content">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="table-title">M. Classe Hab.</th>
+                        <th scope="col" class="table-title">M. Classe Arm.</th>
+                        <th scope="col" class="table-title">M. Armas</th>
+                        <th scope="col" class="table-title">M. Magia</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="inner-block-table">
+                            <img src="img/arrow_up.png" class="inner-block-arrows" id="mch-arrow-up" alt="Up arrow">
+                            <input type="number" class="inner-block-text" placeholder="" id="mch-total" max="50" pattern="/^-?\d+\.?\d*$/" onKeyPress="if( this.value.length == 3 ) return false; " />
+                            <img src="img/arrow_down.png" class="inner-block-arrows" id="mch-arrow-down" alt="Down arrow">
+                        </td>
+                        <td class="inner-block-table">
+                            <img src="img/arrow_up.png" class="inner-block-arrows" id="mca-arrow-up" alt="Up arrow">
+                            <input type="number" class="inner-block-text" placeholder="" id="mca-total" max="50" pattern="/^-?\d+\.?\d*$/" onKeyPress="if( this.value.length == 3 ) return false; " />
+                            <img src="img/arrow_down.png" class="inner-block-arrows" id="mca-arrow-down" alt="Down arrow">
+                        </td>
+                        <td class="inner-block-table">
+                            <img src="img/arrow_up.png" class="inner-block-arrows" id="ma-arrow-up" alt="Up arrow">
+                            <input type="number" class="inner-block-text" placeholder="" id="ma-total" max="50" pattern="/^-?\d+\.?\d*$/" onKeyPress="if( this.value.length == 3 ) return false; " />
+                            <img src="img/arrow_down.png" class="inner-block-arrows" id="ma-arrow-down" alt="Down arrow">
+                        </td>
+                        <td class="inner-block-table">
+                            <img src="img/arrow_up.png" class="inner-block-arrows" id="mm-arrow-up" alt="Up arrow">
+                            <input type="number" class="inner-block-text" placeholder="" id="mm-total" max="50" pattern="/^-?\d+\.?\d*$/" onKeyPress="if( this.value.length == 3 ) return false; " />
+                            <img src="img/arrow_down.png" class="inner-block-arrows" id="mm-arrow-down" alt="Down arrow">
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+    <section class="inner-block-footer">
+        <!-- Footer -->
+        <footer class="text-center text-white" style="background-color: #0a4275;">
+          <!-- Grid container -->
+          <div class="container p-4 pb-0 data-options-global">
+            <!-- Section: CTA -->
+            <section class="data-options">
+                <button type="button" id="btnDeleteSheet" class="btn btn-danger">Excluir Dados</button>
+                <button type="button" id="btnExportSheet" class="btn btn-warning">Exportar Dados</button>
+            </section>
+            <!-- Section: CTA -->
+          </div>
+          <!-- Grid container -->
+      
+          <!-- Copyright -->
+          <div class="text-center p-3 data-options-bottom" style="background-color: rgba(0, 0, 0, 0.2);">
+            <button type="button" id="btnSaveSheet" class="btn btn-primary">Salvar Ficha</button>
+          </div>
+          <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+    </section>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

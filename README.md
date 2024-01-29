@@ -1,2 +1,2 @@
 # charsheet
-Character sheet for the Prymarya System
+Character Sheet App for the Prymarya Tabletop RPG System.
